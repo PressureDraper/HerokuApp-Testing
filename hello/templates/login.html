@@ -1,0 +1,40 @@
+{% extends 'loglike.html' %}
+{% block login %}
+	<form class="form-group" action="/" method="POST">
+		{% csrf_token %}
+		<div class="in-1">
+			<input class="inp" type="text" id="usr" name="user" required>
+			<label class="form-label"><span class="search">Username</span></label>
+			<br>
+			<br>
+			<br>
+			<br>
+			<input class="inp2" type="password" id="pass" name="passwd" required>
+			<label class="form-label2"><span class="search2">Password</span></label>
+		</div>
+		<div class="btn-login">
+			<input class="btn-login" type="submit" name="enviar" value="Login">
+		</div>
+		<div class="div-textreg">
+			<span class="text-reg">You don't have an account? Register right now</span>
+		</div>
+	</form>
+{% endblock %}
+{% block regist %}
+	<form class="form-group" action="/" method="POST" id="fg2">
+		{% csrf_token %}
+		<div class="in-1">
+			<input class="inp" type="text" id="usr2" name="username" required>
+			<label class="form-label"><span class="search">Username</span></label>
+			<br>
+			<br>
+			<br>
+			<br>
+			<input class="inp2" type="password" id="pass2" name="passwd" required>
+			<label class="form-label2"><span class="search2">Password</span></label>
+		</div>
+		<div class="div-regform">
+			<input class="btn-regist" type="submit" name="registrar" value="Sign-in" id="btn-enviar">
+		</div>
+	</form>
+{% endblock %}
