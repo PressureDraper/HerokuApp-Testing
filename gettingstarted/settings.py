@@ -79,11 +79,11 @@ WSGI_APPLICATION = "gettingstarted.wsgi.application"
 DATABASES = {
     "default": {
     	'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd5u5reg1e2cfoe',
-        'USER': 'scpdcehjmfiywd',
-        'PASSWORD': '3db48870df5950039ba47a8dddb9631ba7c6ad62f472c49939a792528ebb3446',
-        'HOST': 'ec2-54-157-79-121.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'NAME': 'DATABASE_NAME',
+        'USER': 'DATABASE_USER',
+        'PASSWORD': 'DATABASE_PASSWORD',
+        'HOST': 'HOSTING',
+        'PORT': 'PORT',
         #"ENGINE" : "django.db.backends.sqlite3",
         #"NAME": os.path.join(BASE_DIR, "db.sqlite3")
     }
